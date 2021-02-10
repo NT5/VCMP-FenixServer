@@ -1,0 +1,1081 @@
+<Server>
+	<!-- General Server Config -->
+    <config>
+        <name>SO - Under City Server</name>
+        <gamemode>Freeroam v0.1b</gamemode>
+		<news>Server on construction.</news>
+        <pass>none</pass>
+		<cmdprefix>!</cmdprefix>
+        <maxplayers>20</maxplayers>
+		<maxprops>3</maxprops>
+		<maxcars>3</maxcars>
+		<maxgotolocs>10</maxgotolocs>
+    </config>
+	<!-- Irc Echo Config -->
+    <irc>
+		<enable>false</enable>
+        <ip>94.23.157.172</ip>
+        <port>6667</port>
+        <user>Fenix</user>
+        <pass>none</pass>
+        <channel>#TEST-A</channel>
+        <chanpass>none</chanpass>
+    </irc>
+	
+	<!-- MySQL Server Config -->
+    <sql>
+		<enable>true</enable>
+        <host>nt5.info</host>
+        <user>vcmp</user>
+        <pass>vcmp</pass>
+        <database>vcmp</database>
+    </sql>
+	
+	<!-- Json Server Config -->
+	<json>
+		<enable>true</enable>
+		<port>8081</port>
+	</json>
+</Server>
+<!-- Commands & Level  -->
+<Commands>
+	<Cmd>
+		<Name>spree</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>stats</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>goto</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>nogoto</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>mygotolocs</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>delgotoloc</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>gotoloc</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>saveloc</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>cd</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>spikes</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>drunk</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>undrunk</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>night</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>day</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>foogy</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>eject</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>fix</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>flip</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>ff</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>bstunt</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>cash</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>showcash</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>withdraw</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>deposit</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>givecash</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>wep</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>savewep</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>disarm</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>arena</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>leave</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>hide</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>heal</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>loc</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>spawnloc</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>check</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>server</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>irc</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>shootinair</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>help</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+	<Name>forsale</Name>
+	<Level>1</Level>
+	<eEnable>0</eEnable>
+	<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>buyprop</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>sellprop</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>myprops</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>shareprop</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>delshareprop</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>gotomyhome</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>buycar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>sellcar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>sharecar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>delsharecar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>gotomycar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>getcar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>parkcar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>autofix</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>lockcar</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>lights</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>engine</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>detonate</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>hunt</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>hunted</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>wepstats</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>wstats</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>bwstats</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+	<Name>admin</Name>
+	<Level>1</Level>
+	<eEnable>0</eEnable>
+	<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>level</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>timeplay</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>timewep</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>hp</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>arm</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>ping</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>rank</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>cookies</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>tradecookie</Name>
+		<Level>1</Level>
+		<eEnable>1</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>ipm</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>login</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>register</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>logout</Name>
+		<Level>1</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+	<Name>kick</Name>
+	<Level>2</Level>
+	<eEnable>0</eEnable>
+	<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>ban</Name>
+		<Level>2</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>unban</Name>
+		<Level>2</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>ann</Name>
+		<Level>2</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>mute</Name>
+		<Level>2</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>freeze</Name>
+		<Level>2</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>drown</Name>
+		<Level>2</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>sethp</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>setarm</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>healall</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>armall</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>shootinairall</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>bstuntall</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>get</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>agoto</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>setcash</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>setgrav</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>flycars</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>driveby</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>waterdrive</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>setspeed</Name>
+		<Level>3</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>setlevel</Name>
+		<Level>4</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+	<Cmd>
+		<Name>exe</Name>
+		<Level>4</Level>
+		<eEnable>0</eEnable>
+		<Help></Help>
+	</Cmd>
+</Commands>
+<!-- Messages to show in server -->
+<Messages>
+	<Text>
+	Need Weapons? Use !wep wep1, wep2, wep3... to get multiple weapons.
+	</Text>
+	<Text>
+	All Weapons are free! only type !wep weapon name/id.
+	</Text>
+	<Text>
+	Need Teleport to another player?, no problem! type !goto player/id.
+	</Text>
+	<Text>
+	All Commands can be used with '!' or '/c'.
+	</Text>
+	<Text>
+	Use !commands 0,1,2.. to see list of commands!.
+	</Text>
+	<Text>
+	For Watch your statistics type !stats.
+	</Text>
+	<Text>
+	See your ranking on server with !rank.
+	</Text>
+	<Text>
+	Check the Weapon Time!, if you kill with that weapon you get bonus!
+	</Text>
+	<Text>
+	Kill all Players with Head Shoot and get more money!
+	</Text>
+	<Text>
+	Visit the fights Arenas with !arena weapon name.
+	</Text>
+	<Text>
+	Kill Players on arenas and get more money!!
+	</Text>
+	<Text>
+	Cookies are interchangeable!
+	</Text>
+	<Text>
+	For Get Cookies, rank up of kill and pickups, or test your luck.
+	</Text>
+	<Text>
+	Want to see your saved locs? use !mygotolocs.
+	</Text>
+</Messages>
+<!-- Locations of Areas -->
+<Arenas>
+	<Area>
+		<Name>10</Name>
+		<Pos>-885.04 -1479.26 12.09</Pos>
+	</Area>
+	<Area>
+		<Name>21</Name>
+		<Pos>575.70 -233.92 156.96</Pos>
+	</Area>
+	<Area>
+		<Name>31</Name>
+		<Pos>-1185.61 -1349.11 11.43</Pos>
+	</Area>
+	<Area>
+		<Name>11</Name>
+		<Pos>331.88 -267.82 12.47</Pos>
+	</Area>
+	<Area>
+		<Name>22</Name>
+		<Pos>-1808.25 -494.24 17.82</Pos>
+	</Area>
+	<Area>
+		<Name>32</Name>
+		<Pos>-1019.94 -1331.95 31.52</Pos>
+	</Area>
+	<Area>
+		<Name>0</Name>
+		<Pos>-906.83 -1254.92 11.72</Pos>
+	</Area>
+	<Area>
+		<Name>23</Name>
+		<Pos>386.93 1115.61 51.51</Pos>
+	</Area>
+	<Area>
+		<Name>24</Name>
+		<Pos>-635.18 -302.28 12.05</Pos>
+	</Area>
+	<Area>
+		<Name>26</Name>
+		<Pos>-935.81 395.35 11.25</Pos>
+	</Area>
+	<Area>
+		<Name>17</Name>
+		<Pos>-828.33 338.62 194.97</Pos>
+	</Area>
+	<Area>
+		<Name>27</Name>
+		<Pos>-546.38 801.35 187.70</Pos>
+	</Area>
+	<Area>
+		<Name>18</Name>
+		<Pos>-644.71 882.04 11.60</Pos>
+	</Area>
+	<Area>
+		<Name>28</Name>
+		<Pos>-1029.02 -1506.96 19.41</Pos>
+	</Area>
+	<Area>
+		<Name>19</Name>
+		<Pos>403.10 265.28 11.86</Pos>
+	</Area>
+	<Area>
+		<Name>29</Name>
+		<Pos>163.83 497.07 15.54</Pos>
+	</Area>
+	<Area>
+		<Name>9</Name>
+		<Pos>-880.39 -114.48 11.10</Pos>
+	</Area>
+</Arenas>
+<!-- Locations of Spawn Loc -->
+<SpawnLoc>
+    <Coordenates>-1037.51 1331.62 8.74</Coordenates>
+    <Coordenates>-1087.22 1404.65 8.73682</Coordenates>
+    <Coordenates>-1040.2 1420.31 8.73682</Coordenates>
+    <Coordenates>-1095.08 1513.45 11.9797</Coordenates>
+    <Coordenates>-1127.5 1514.28 11.9797</Coordenates>
+    <Coordenates>-1093.86 1373.9 18.7254</Coordenates>
+    <Coordenates>-1093.9 1287.95 18.7254</Coordenates>
+    <Coordenates>-1043.69 1243.08 8.73682</Coordenates>
+    <Coordenates>-1661.65 -224.867 14.8683</Coordenates>
+    <Coordenates>-1605.54 -209.937 14.8683</Coordenates>
+    <Coordenates>-1623.63 -225.07 28.4261</Coordenates>
+    <Coordenates>-1730.31 -254.122 14.8683</Coordenates>
+    <Coordenates>-1739.32 -286.188 29.7525</Coordenates>
+    <Coordenates>-1767.2 -223.157 18.8546</Coordenates>
+    <Coordenates>-1707.88 -158.151 14.8683</Coordenates>
+    <Coordenates>-1647.09 -169.861 14.8683</Coordenates>
+    <Coordenates>-1353.41 -758.607 15.6501</Coordenates>
+    <Coordenates>-1405.43 -855.24 14.8717</Coordenates>
+    <Coordenates>-693 -1314.19 11.0715</Coordenates>
+    <Coordenates>-682.048 -1279.14 16.3515</Coordenates>
+    <Coordenates>-678.321 -1276.63 18.8953</Coordenates>
+    <Coordenates>-735.179 -1469.87 11.9599</Coordenates>
+    <Coordenates>-723.633 -1547.02 14.9149</Coordenates>
+    <Coordenates>-870.607 -682.244 11.2341</Coordenates>
+    <Coordenates>-844.363 -704.825 11.1189</Coordenates>
+    <Coordenates>-934.531 -304.609 13.382</Coordenates>
+    <Coordenates>-891.419 -128.243 11.1035</Coordenates>
+    <Coordenates>-772.326 125.596 10.985</Coordenates>
+    <Coordenates>-702.585 535.006 11.6678</Coordenates>
+    <Coordenates>-836.769 577.203 10.9309</Coordenates>
+    <Coordenates>-794.797 550.06 11.1007</Coordenates>
+    <Coordenates>-577.776 646.699 11.0712</Coordenates>
+    <Coordenates>-597.083 677.402 11.2802</Coordenates>
+    <Coordenates>-602.742 631.709 12.2347</Coordenates>
+    <Coordenates>-658.196 762.364 11.6005</Coordenates>
+    <Coordenates>-689.914 823.013 10.9154</Coordenates>
+    <Coordenates>-54.1661 927.414 10.9401</Coordenates>
+    <Coordenates>-92.6397 938.708 10.827</Coordenates>
+    <Coordenates>-90.8869 981.081 10.9412</Coordenates>
+    <Coordenates>-25.9026 1015.54 12.4418</Coordenates>
+    <Coordenates>-13.8299 1110.13 16.029</Coordenates>
+    <Coordenates>605.962 823.759 22.529</Coordenates>
+    <Coordenates>530.123 -68.086 14.3036</Coordenates>
+    <Coordenates>526.728 -73.8794 10.6049</Coordenates>
+    <Coordenates>494.532 -83.8798 10.0298</Coordenates>
+    <Coordenates>472.776 -70.936 10.4836</Coordenates>
+    <Coordenates>157.183 -1516.85 10.9867</Coordenates>
+    <Coordenates>574.62 -1766.41 8.53128</Coordenates>
+    <Coordenates>479.276 -1718.83 15.6539</Coordenates>
+    <Coordenates>475.513 -1721.5 57.2529</Coordenates>
+    <Coordenates>97.5272 300.348 19.4692</Coordenates>
+    <Coordenates>-374.84 -584.02 39.8476</Coordenates>
+    <Coordenates>-378.541 -596.403 25.8263</Coordenates>
+    <Coordenates>-367.21 -534.641 17.2819</Coordenates>
+    <Coordenates>-329.755 -557.048 12.8072</Coordenates>
+    <Coordenates>-379.339 -650.765 10.4131</Coordenates>
+    <Coordenates>-378.49 -592.986 10.3623</Coordenates>
+    <Count>57</Count>
+</SpawnLoc>
+<!-- Locations of Secret Objects -->
+<Objects>
+    <Pickup>605.443 894.002 22.529</Pickup>
+    <Pickup>541.444 814.919 12.2189</Pickup>
+    <Pickup>581.54 914.799 14.0936</Pickup>
+    <Pickup>537.915 894.167 15.3531</Pickup>
+    <Pickup>462.536 1055.84 18.2946</Pickup>
+    <Pickup>461.724 1080.45 17.8526</Pickup>
+    <Pickup>513.217 1105.71 18.9701</Pickup>
+    <Pickup>561.967 1106.09 18.9701</Pickup>
+    <Pickup>556.61 1137.3 18.9701</Pickup>
+    <Pickup>562.359 1166.47 18.9701</Pickup>
+    <Pickup>561.768 1194.63 18.9701</Pickup>
+    <Pickup>535.507 1188.95 18.9701</Pickup>
+    <Pickup>592.646 1239.09 7.66627</Pickup>
+    <Pickup>587.13 1241.56 16.7526</Pickup>
+    <Pickup>556.305 1288.72 18.1528</Pickup>
+    <Pickup>531.813 1273.45 18.1528</Pickup>
+    <Pickup>394.689 1329.95 26.5275</Pickup>
+    <Pickup>360.578 1321.15 26.5275</Pickup>
+    <Pickup>318.59 1334.89 25.9982</Pickup>
+    <Pickup>253.163 1320.15 22.9486</Pickup>
+    <Pickup>172.499 1279.03 25.9982</Pickup>
+    <Pickup>222.79 1181.59 26.4972</Pickup>
+    <Pickup>345.589 1123.87 18.2992</Pickup>
+    <Pickup>382.632 1136.87 20.3739</Pickup>
+    <Pickup>394.43 1080.02 19.8159</Pickup>
+    <Pickup>364.633 1084.92 19.0685</Pickup>
+    <Pickup>377.698 1014.04 19.2688</Pickup>
+    <Pickup>364.145 1062.83 20.2201</Pickup>
+    <Pickup>407.499 1031.94 18.9625</Pickup>
+    <Pickup>423.083 1017.88 25.2988</Pickup>
+    <Pickup>468.595 1016.95 25.3175</Pickup>
+    <Pickup>460.409 1132.96 24.7279</Pickup>
+    <Pickup>385.367 1210.78 19.4723</Pickup>
+    <Pickup>425.271 1304.63 19.7414</Pickup>
+    <Pickup>265.947 1306.76 17.3998</Pickup>
+    <Pickup>263.585 1306.59 17.3998</Pickup>
+    <Pickup>266.27 1304.41 17.3998</Pickup>
+    <Pickup>263.972 1304.07 17.3998</Pickup>
+    <Pickup>289.6 1247.36 18.4986</Pickup>
+    <Pickup>327.526 1203.88 17.4773</Pickup>
+    <Pickup>344.573 1251.9 20.3461</Pickup>
+    <Pickup>340.407 1206.68 22.7475</Pickup>
+    <Pickup>305.009 1256.13 27.5452</Pickup>
+    <Pickup>340.776 1230.96 27.5546</Pickup>
+    <Pickup>383.334 894.489 14.7018</Pickup>
+    <Pickup>354.379 892.858 25.4659</Pickup>
+    <Pickup>270.058 731.639 12.9487</Pickup>
+    <Pickup>328.256 742.051 12.9593</Pickup>
+    <Pickup>329.186 717.4 22.8969</Pickup>
+    <Pickup>49.5253 1007.9 10.9547</Pickup>
+    <Pickup>1.94 956.958 11.1667</Pickup>
+    <Pickup>-4.1143 1004.65 9.79153</Pickup>
+    <Pickup>-18.3383 989.985 10.926</Pickup>
+    <Pickup>-33.5353 1018.74 13.038</Pickup>
+    <Pickup>-26.917 994.082 17.9691</Pickup>
+    <Pickup>-98.3969 1001.45 10.9105</Pickup>
+    <Pickup>-114.981 970.697 10.9403</Pickup>
+    <Pickup>-112.366 967.495 10.9423</Pickup>
+    <Pickup>-72.975 967.731 14.4372</Pickup>
+    <Pickup>535.794 584.147 10.6507</Pickup>
+    <Pickup>-89.3328 938.271 10.8429</Pickup>
+    <Pickup>-71.0719 922.363 17.9691</Pickup>
+    <Pickup>-24.7959 863.561 17.3374</Pickup>
+    <Pickup>-2.32051 919.344 15.1612</Pickup>
+    <Pickup>-50.1235 999.78 10.9403</Pickup>
+    <Pickup>28.2166 896.812 23.5073</Pickup>
+    <Pickup>83.033 886.052 20.8289</Pickup>
+    <Pickup>0.345998 1157.36 23.5272</Pickup>
+    <Pickup>-15.9462 1220.35 21.4526</Pickup>
+    <Pickup>-43.9297 1212.51 21.4526</Pickup>
+    <Pickup>15.2877 1197.19 18.3081</Pickup>
+    <Pickup>58.9995 1145.74 19.5113</Pickup>
+    <Pickup>32.8367 1118.11 17.2811</Pickup>
+    <Pickup>76.5625 1123.24 25.4617</Pickup>
+    <Pickup>82.5976 946.732 11.5308</Pickup>
+    <Pickup>-471.595 1144.34 11.0709</Pickup>
+    <Pickup>-448.509 1250.22 11.767</Pickup>
+    <Pickup>-503.216 1156.72 81.071</Pickup>
+    <Pickup>-692.027 1232.82 11.0983</Pickup>
+    <Pickup>-685.315 1267.04 10.8171</Pickup>
+    <Pickup>-657.309 1271.19 10.8171</Pickup>
+    <Pickup>-798.855 1156.74 11.8066</Pickup>
+    <Pickup>-770.631 1121.49 18.6275</Pickup>
+    <Pickup>-764.789 1096.54 9.51577</Pickup>
+    <Pickup>-720.017 1091.89 10.965</Pickup>
+    <Pickup>-633.949 1077.7 11.0454</Pickup>
+    <Pickup>-611.352 1097.98 9.38476</Pickup>
+    <Pickup>-667.071 1267.88 24.9883</Pickup>
+    <Pickup>-689.415 1239.96 16.0706</Pickup>
+    <Pickup>-690.968 1298.11 11.7672</Pickup>
+    <Pickup>-708.011 1299.2 11.7673</Pickup>
+    <Pickup>-734.665 1263.56 11.7672</Pickup>
+    <Pickup>-793.529 1321.23 11.7272</Pickup>
+    <Pickup>-790.154 1369.95 66.6911</Pickup>
+    <Pickup>-840.292 1357.98 66.4204</Pickup>
+    <Pickup>-864.586 1355.98 69.5497</Pickup>
+    <Pickup>-824.902 939.711 11.0846</Pickup>
+    <Pickup>-816.032 855.706 11.0846</Pickup>
+    <Pickup>-834.092 838.844 11.0846</Pickup>
+    <Pickup>-754.86 824.997 11.0846</Pickup>
+    <Pickup>-729.116 728.383 12.1167</Pickup>
+    <Pickup>-807.135 704.421 11.1811</Pickup>
+    <Pickup>-711.132 676.716 12.1167</Pickup>
+    <Pickup>-689.167 843.942 10.9154</Pickup>
+    <Pickup>-749.619 937.519 11.0846</Pickup>
+    <Pickup>-805.076 928.968 15.0733</Pickup>
+    <Pickup>-717.153 761.835 11.0846</Pickup>
+    <Pickup>-601.112 945.651 11.0846</Pickup>
+    <Pickup>-641.463 819.237 11.5406</Pickup>
+    <Pickup>-604.141 776.051 11.5987</Pickup>
+    <Pickup>-612.756 794.532 24.1948</Pickup>
+    <Pickup>-630.861 803.192 23.8821</Pickup>
+    <Pickup>-519.572 837.556 11.5987</Pickup>
+    <Pickup>-580.804 756.999 22.8768</Pickup>
+    <Pickup>-537.035 796.266 97.5104</Pickup>
+    <Pickup>-541.916 862.445 28.8947</Pickup>
+    <Pickup>-507.075 793.533 12.4284</Pickup>
+    <Pickup>-565.568 698.221 20.9169</Pickup>
+    <Pickup>-605.306 733.115 20.9275</Pickup>
+    <Pickup>-603.35 632.247 12.2347</Pickup>
+    <Pickup>-586.36 640.252 22.1323</Pickup>
+    <Pickup>-664.305 692.09 20.5149</Pickup>
+    <Pickup>-751.671 456.229 11.1007</Pickup>
+    <Pickup>-830.315 459.225 11.1007</Pickup>
+    <Pickup>-595.898 616.256 11.6814</Pickup>
+    <Pickup>-757.239 226.887 16.3198</Pickup>
+    <Pickup>-869.23 271.389 11.263</Pickup>
+    <Pickup>-896.193 270.142 14.5391</Pickup>
+    <Pickup>-894.872 77.3734 15.9513</Pickup>
+    <Pickup>-885.163 -108.556 11.1034</Pickup>
+    <Pickup>-935.843 -112.075 6.64452</Pickup>
+    <Pickup>-957.494 -352.671 13.382</Pickup>
+    <Pickup>-982.33 -400.859 10.9455</Pickup>
+    <Pickup>-940.087 -469.868 10.9455</Pickup>
+    <Pickup>-898.335 -550.47 22.4789</Pickup>
+    <Pickup>-869.576 -568.662 19.6607</Pickup>
+    <Pickup>-884.057 -581.735 15.0451</Pickup>
+    <Pickup>-866.105 -633.085 11.3756</Pickup>
+    <Pickup>-927.371 -647.09 11.2774</Pickup>
+    <Pickup>-896.439 -697.529 11.1994</Pickup>
+    <Pickup>-1168.23 -630.153 11.8277</Pickup>
+    <Pickup>-1177.5 -572.489 12.4815</Pickup>
+    <Pickup>-1233.09 -582.094 14.8724</Pickup>
+    <Pickup>-1325.74 -516.382 12.6774</Pickup>
+    <Pickup>-1352.8 -758.442 24.531</Pickup>
+    <Pickup>-1354 -758.292 15.6501</Pickup>
+    <Pickup>-1362.81 -933.31 20.8931</Pickup>
+    <Pickup>-1366.89 -928.164 20.8938</Pickup>
+    <Pickup>-1359.26 -923.089 20.8931</Pickup>
+    <Pickup>-1355.1 -931.423 20.8931</Pickup>
+    <Pickup>-1504.38 -927.999 20.8827</Pickup>
+    <Pickup>-1512.41 -922.996 20.8823</Pickup>
+    <Pickup>-1517.34 -931.924 20.8823</Pickup>
+    <Pickup>-1507.9 -934.605 20.8823</Pickup>
+    <Pickup>-1501.13 -867.565 14.8717</Pickup>
+    <Pickup>-1394.68 -884.559 14.8717</Pickup>
+    <Pickup>-1407.59 -534.984 14.8674</Pickup>
+    <Pickup>-1507.33 -465.156 14.8676</Pickup>
+    <Pickup>-1630.46 -448.35 14.8674</Pickup>
+    <Pickup>-1733.78 -448.688 14.8678</Pickup>
+    <Pickup>-1808.34 -494.46 17.9456</Pickup>
+    <Pickup>-1692.57 -295.889 29.7525</Pickup>
+    <Pickup>-1748.97 -295.889 29.7525</Pickup>
+    <Pickup>-1729.3 -171.837 18.8546</Pickup>
+    <Pickup>-1690.51 -176.525 29.7525</Pickup>
+    <Pickup>-1647.43 -170.068 18.0578</Pickup>
+    <Pickup>-1630.45 -94.7042 14.8683</Pickup>
+    <Pickup>-1721.95 -100.221 14.8683</Pickup>
+    <Pickup>-1673.2 -193.801 14.8683</Pickup>
+    <Pickup>-1597.08 -218.119 14.8683</Pickup>
+    <Pickup>-1524.39 -197.819 14.8683</Pickup>
+    <Pickup>-1294.68 62.9094 12.8411</Pickup>
+    <Pickup>-1319.37 55.9335 18.2016</Pickup>
+    <Pickup>-1291.6 81.3088 26.6573</Pickup>
+    <Pickup>-1297.9 173.267 11.4632</Pickup>
+    <Pickup>-1283.83 178.852 11.45</Pickup>
+    <Pickup>-1272.15 141.173 12.6553</Pickup>
+    <Pickup>-1260.16 153.217 26.7563</Pickup>
+    <Pickup>-1245.33 80.9631 11.88</Pickup>
+    <Pickup>-1240.44 79.8781 11.88</Pickup>
+    <Pickup>-1214 -19.3235 11.3777</Pickup>
+    <Pickup>-1204.36 -120.941 14.5246</Pickup>
+    <Pickup>-1145.46 -123.599 11.4464</Pickup>
+    <Pickup>-1146.57 -411.226 10.9455</Pickup>
+    <Pickup>-648.429 -555.351 18.9737</Pickup>
+    <Pickup>-575.365 -418.536 11.2856</Pickup>
+    <Pickup>-569.139 -416.842 19.8016</Pickup>
+    <Pickup>-553.799 -404.499 10.1762</Pickup>
+    <Pickup>-554.713 -548.602 10.7286</Pickup>
+    <Pickup>-563.991 -576.054 8.94369</Pickup>
+    <Pickup>-581.035 -548.803 10.5409</Pickup>
+    <Pickup>-310.947 -415.771 10.1147</Pickup>
+    <Pickup>-361.589 -437.043 10.2677</Pickup>
+    <Pickup>-400.06 -566.558 19.5754</Pickup>
+    <Pickup>-317.163 -582.345 11.6022</Pickup>
+    <Pickup>-372.153 -597.882 26.9725</Pickup>
+    <Pickup>-238.035 -576.953 10.3609</Pickup>
+    <Pickup>-475.32 -568.387 12.8639</Pickup>
+    <Pickup>-456.79 -566.418 12.8508</Pickup>
+    <Pickup>-31.582 -462.94 19.6835</Pickup>
+    <Pickup>117.765 -345.685 17.9003</Pickup>
+    <Pickup>263.542 -282.952 9.64394</Pickup>
+    <Pickup>266.235 -249.915 36.1602</Pickup>
+    <Pickup>317.835 -227.736 41.2586</Pickup>
+    <Pickup>468.395 -55.5864 15.7038</Pickup>
+    <Pickup>590.912 -110.628 9.45002</Pickup>
+    <Pickup>531.172 -136.351 36.4095</Pickup>
+    <Pickup>448.939 -489.507 18.1928</Pickup>
+    <Pickup>472.605 -426.629 10.9163</Pickup>
+    <Pickup>420.812 -591.11 10.7178</Pickup>
+    <Pickup>415.396 -622.899 10.7689</Pickup>
+    <Pickup>330.83 -784.295 10.6437</Pickup>
+    <Pickup>224.384 -1219 11.0659</Pickup>
+    <Pickup>199.828 -1287.12 12.0712</Pickup>
+    <Pickup>200.518 -1365.64 10.9537</Pickup>
+    <Pickup>194.362 -1414.18 11.0712</Pickup>
+    <Pickup>144.523 -1479.07 10.608</Pickup>
+    <Pickup>128.777 -1508.42 10.4681</Pickup>
+    <Pickup>130.815 -1553.41 11.2591</Pickup>
+    <Pickup>8.82511 -1648.99 9.54177</Pickup>
+    <Pickup>-109.342 -1591.38 10.189</Pickup>
+    <Pickup>-145.514 -1431.74 4.18607</Pickup>
+    <Pickup>-155.892 -1346.61 4.18607</Pickup>
+    <Pickup>-380.645 -1338.88 8.36318</Pickup>
+    <Pickup>-375.321 -1293.73 10.138</Pickup>
+    <Pickup>-371.406 -1324.11 11.2248</Pickup>
+    <Pickup>-374.153 -1317.73 13.9944</Pickup>
+    <Pickup>-375.739 -1340.37 13.9922</Pickup>
+    <Count>228</Count>
+</Objects>
+<!-- Locations To Race Tracks -->
+<RaceTracks>
+	<Race>
+		<Name>Test</Name>
+		<CheckPoints>
+			<Point>0.0 0.0 0.0</Point>
+		</CheckPoints>
+	</Race>
+</RaceTracks>
+<!-- Atack Defence Bases -->
+<ADBases>
+	<Base>
+		<Name>Test</Name>
+		<Pos>0.0 0.0 0.0</Pos>
+	</Base>
+</ADBases>
+<!-- Locations To CKing -->
+<PKing>
+	<Pos>-1014.59 57.14 14.99</Pos>
+</PKing>
+<!-- Rob Bank Pickups -->
+<RBank>
+	<Pos>-965.38 -337.29 15.59</Pos>
+	<Pos>-956.64 -341.53 15.59</Pos>
+	<Pos>-898.29 -326.60 17.80</Pos>
+	<Pos>-924.49 -355.51 17.80</Pos>
+	<Pos>-941.84 -343.70 7.23</Pos>
+	<Pos>-934.22 -346.72 7.23</Pos>
+	<Pos>-930.71 -341.67 17.80</Pos>
+</RBank>

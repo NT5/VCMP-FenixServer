@@ -1,0 +1,31 @@
+# MSVC makefile for sq_geoip vcmp squirrel module
+
+#GeoIP path
+GEOIP=libGeoIPwin32
+
+NAME=sq_geoip
+
+COMPILER=cl
+LINKER=link
+CFLAGS=/MT /TP /O2 -I$(GEOIP)
+LDFLAGS=/NOLOGO /DLL
+
+OBJS=SQFuncs.obj SQConsts.obj SQMain.obj
+LIBDEPS = $(GEOIP)\GeoIP.lib wsock32.lib
+
+all: $(NAME).dll
+
+$(NAME).dll: $(OBJS)
+   $(LINKER) $(LDFLAGS) $(OBJS) $(LIBDEPS) /OUT:$(NAME).dll
+
+SQFuncs.obj: SQFuncs.c
+   $(COMPILER) $(CFLAGS) -c SQFuncs.c
+
+SQConsts.obj: SQConsts.c
+   $(COMPILER) $(CFLAGS) -c SQConsts.c
+
+SQMain.obj: SQMain.c
+   $(COMPILER) $(CFLAGS) -c SQMain.c
+
+clean:
+   del *.obj $(NAME).dll $(NAME).exp $(NAME).lib
